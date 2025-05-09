@@ -1,0 +1,38 @@
+/* Theme toggle button styles */
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--header-color);
+    padding: 8px;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background-color: var(--btn-operation-bg);
+  }
+  
+  /* Solução simples: usar uma classe específica para controlar a visibilidade */
+  .theme-toggle .icon-visible {
+    display: block;
+  }
+  
+  .theme-toggle .icon-hidden {
+    display: none;
+  }
+  
+  /* Transition for theme change */
+  body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .calculator,
+  .calculator-display,
+  .calculator-history,
+  .btn {
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  }
